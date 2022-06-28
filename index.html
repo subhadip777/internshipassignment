@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Internship Assignment</h2>        
+    </div>
+    <div id="demo_date">
+    </div>
+    <div id="demo_time"></div>
+    
+    
+<script>
+    
+
+
+setInterval(()=>{
+const time=new Date();
+const month= time.getMonth();
+const hour=time.getHours();
+const minutes=time.getMinutes();
+const seconds=time.getSeconds();
+const date=time.getDate();
+const day=time.getDay();
+const year=time.getFullYear();
+const days= ['SUN DAY','MON DAY','TUES DAY','WEDNES DAY','THRUS DAY','FRIDAY','SATURN DAY'];
+const
+months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DateString=days[day] +' : '+date+'th'+months[month]+' : '+year;
+const tSting=hour+' : '+minutes+' : '+seconds;
+document.getElementById('demo_date').innerHTML=DateString;
+document.getElementById("demo_time").innerHTML=tSting;
+} ,1000)
+
+</script>
+</body>
+</html>
+
